@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>About Michael Airhart</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="fa/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"></head>-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/x-icon"  href="images/favicon.ico">
+  <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+  <script type="text/javascript" src="js/contacts.js"></script>
+</head>
+
+<header class="masthead">
+  <h1 class="masthead-heading">Michael Airhart</h1>
+  <p class="masthead-intro">Editor. Taxonomist. Web Developer.</p>
+    <nav class="top-navigation">
+        <div class="content">
+        <ul class="links">
+          <li>About</li>
+          <li><a href="project_A.html">Projects</a></li>
+          <li><a href="social.html">To-Do List</a></li>
+      </ul>
+    </nav>
+</header>
+<section class="introduction-section">  
+<h2 class="section-heading"></h2>
+
+</section>
+<section id="contacts-input">  
+<h2>Contacts</h2>
+<h3>Add a contact:</h3>
+      <form id="contacts">
+        <div class="multiLine">
+          <div class="firstName">
+            <h4 class="labelLeft">First name:</h4>
+            <input type="text" id="firstName" name="entry" class="entry" required>
+          </div>
+          <div class="lastName">
+            <h4 class="labelRight">Last name:</h4>
+            <input type="text" id="lastName" name="entry" class="entry" required>
+          </div>
+        </div>
+        <h4>Phone number:</h4>
+        <input type="text" id="phoneNumber" name="entry" class="entry" >
+        <h4>Street:</h4>
+        <input type="text" id="street" name="entry" class="entry" >
+        <div class="multiLine">
+          <div class="city">
+            <h4>City:</h4>
+            <input type="text" id="city" name="entry" class="entry" >
+          </div>
+          <div class="state">
+            <h4>State:</h4>
+            <input type="text" id="state" name="entry" class="entry" >
+        <input type="submit" id="submission" value="Submit">
+          </form>
+
+</section>
+
+<section id="contacts-list">  
+<h2>Contacts</h2>
+<ul id="output">
+</ul>
+
+</section>
+
+<section id="contacts-display">  
+<div id="selectedContact">
+</div>
+
+</section>
+
+<footer class="content-footer">
+  <h2>Contact me</h2>
+    <p>Say hi to me on these social networks:</p>
+    <ul class="social">
+        <li><a href="https://github.com/nomanisan">GitHub</a></li>
+        <li><a href="https://twitter.com/michaelairhart">Twitter</a></li>
+        <li><a href="https://plus.google.com/u/1/+MichaelAirhart">Google+</a></li>
+    </ul>
+</footer>
+
+<!--
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+-->
+</body>
+</html>
