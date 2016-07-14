@@ -427,6 +427,8 @@ body {
 .masthead-heading,
 .masthead-intro {
   text-align: center;
+  clear: all;
+  float: none;
 }
 .masthead {
   margin-bottom: 1em;
@@ -585,4 +587,54 @@ h2 {
 .fa-plus-square, .button, .input {
   display:inline;
   text-align:left;
+}
+
+#contacts-input {
+  display: block;
+  clear: both;
+  float: none;
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contacts-list, footer {
+  padding: 5px 5px 5px 1px;
+  display: block;
+  clear: both;
+  float: none;
+}
+
+.multiLine, .phone, .street {
+  display: block;
+  clear: both;
+  float: none;
+}
+
+.firstName, .lastName, .city, .state {
+  float: left;
+}
+
+.lastName, .state {
+  padding-left: 1em;
+}
+
+#contacts-form {
+  float: left;
+}
+
+#contacts-list {
+  font-size: .75em;
+}
+
+#contacts-display, #selectedContact {
+  float: left;
+  display: inline-block;
+  max-width: 10em;
+}
+
+#contacts-display p, ul {
+  font-size: .75em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
 }

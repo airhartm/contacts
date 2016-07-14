@@ -25,14 +25,20 @@
       </ul>
     </nav>
 </header>
+
 <section class="introduction-section">  
 <h2 class="section-heading"></h2>
 
 </section>
+
 <section id="contacts-input">  
-<h2>Contacts</h2>
-<h3>Add a contact:</h3>
+
+    <div id="contacts-form">
+      <h2>Contacts</h2>
+      <h3>Add a contact:</h3>
+
       <form id="contacts">
+
         <div class="multiLine">
           <div class="firstName">
             <h4 class="labelLeft">First name:</h4>
@@ -43,34 +49,42 @@
             <input type="text" id="lastName" name="entry" class="entry" required>
           </div>
         </div>
-        <h4>Phone number:</h4>
-        <input type="text" id="phoneNumber" name="entry" class="entry" >
-        <h4>Street:</h4>
-        <input type="text" id="street" name="entry" class="entry" >
+
+        <div class="phone">
+          <h4>Phone number:</h4>
+          <input type="text" id="phoneNumber" name="entry" class="entry" >
+        </div>
+        <div class="street">
+          <h4>Street:</h4>
+          <input type="text" id="street" name="entry" class="entry" >
+        </div>
         <div class="multiLine">
           <div class="city">
             <h4>City:</h4>
-            <input type="text" id="city" name="entry" class="entry" >
+            <input type="text" id="city" name="entry" class="entry" required>
           </div>
           <div class="state">
             <h4>State:</h4>
-            <input type="text" id="state" name="entry" class="entry" >
-        <input type="submit" id="submission" value="Submit">
-          </form>
+            <input type="text" id="state" name="entry" class="entry" required>
+            <input type="submit" id="submission" value="Submit">
+          </div>
+        </div>
 
-</section>
+      </form>
 
-<section id="contacts-list">  
-<h2>Contacts</h2>
-<ul id="output">
-</ul>
+    </div>
 
-</section>
+    <div id="contacts-display">  
+      <div id="selectedContact">
+      <h2>Your Contact</h2>
+      </div>
+    </div>
 
-<section id="contacts-display">  
-<div id="selectedContact">
-</div>
-
+    <div id="contacts-list">  
+          <h2>New Entries</h2>
+          <ul id="output">
+          </ul>
+    </div>
 </section>
 
 <footer class="content-footer">

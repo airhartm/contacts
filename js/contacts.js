@@ -23,9 +23,11 @@ $(document).ready(function() {
       var contactInfo;
       contactInfo=person[personID];
           contactMember ="<p>"+contactInfo.firstName+" "+contactInfo.lastName+"</p>";
-          contactMember =contactMember+"<p>"+contactInfo.street+"</p>";
-          contactMember =contactMember+"<p>"+contactInfo.city+", "+contactInfo.state+"</p>";
           contactMember =contactMember+"<p>"+contactInfo.phoneNumber+"</p>";
+          contactMember =contactMember+"<p>Addresses:</p>";
+          contactMember =contactMember+"<ul>";
+          contactMember=contactMember+"<li>"+contactInfo.street+", "+contactInfo.city+", "+contactInfo.state+"</li>";
+          contactMember =contactMember+"</ul>";
           $('#selectedContact').html(contactMember);
 
   }));
@@ -41,10 +43,12 @@ $(document).ready(function() {
         this.city=$('#city').val();
         this.state=$('#state').val();
         this.idNumber="contact"+contactIndex;
-        contactMember =this.firstName+" "+this.lastName+"<br/>";
-        contactMember =contactMember+this.street+"<br/>";
-        contactMember =contactMember+this.city+", "+this.state+"<br/>";
-        contactMember =contactMember+this.phoneNumber;
-        $('#selectedContact').html("<p>"+contactMember+"</p>");
+          contactMember ="<p>"+this.firstName+" "+this.lastName+"</p>";
+          contactMember =contactMember+"<p>"+this.phoneNumber+"</p>";
+          contactMember =contactMember+"<p>Addresses:</p>";
+          contactMember =contactMember+"<ul>";
+          contactMember=contactMember+"<li>"+this.street+", "+this.city+", "+this.state+"</li>";
+          contactMember =contactMember+"</ul>";
+          $('#selectedContact').html(contactMember);
         $('#output').append("<li><a id='"+contactIndex+"' class='contact' href='#selectedContact'>"+this.firstName+" "+this.lastName+"</a></li>");
   };
