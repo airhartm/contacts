@@ -15,15 +15,15 @@ $(document).ready(function() {
     $('#city').val("");
     $('#state').val("");
     contactIndex++;
-    //return person[contactIndex];
+
   });
 
   $(document).on("click","a.contact", (function() {
       personID=this.id;
       var contactInfo;
       contactInfo=person[personID];
-          contactMember ="<p>"+contactInfo.firstName+" "+contactInfo.lastName+"</p>";
-          contactMember =contactMember+"<p>"+contactInfo.phoneNumber+"</p>";
+          contactMember ="<p>Name: "+contactInfo.firstName+" "+contactInfo.lastName+"</p>";
+          contactMember =contactMember+"<p>Phone number: "+contactInfo.phoneNumber+"</p>";
           contactMember =contactMember+"<p>Addresses:</p>";
           contactMember =contactMember+"<ul>";
           contactMember=contactMember+"<li>"+contactInfo.street+", "+contactInfo.city+", "+contactInfo.state+"</li>";
@@ -43,8 +43,8 @@ $(document).ready(function() {
         this.city=$('#city').val();
         this.state=$('#state').val();
         this.idNumber="contact"+contactIndex;
-          contactMember ="<p>"+this.firstName+" "+this.lastName+"</p>";
-          contactMember =contactMember+"<p>"+this.phoneNumber+"</p>";
+          contactMember ="<p>Name: "+this.firstName+" "+this.lastName+"</p>";
+          contactMember =contactMember+"<p>Phone number: "+this.phoneNumber+"</p>";
           contactMember =contactMember+"<p>Addresses:</p>";
           contactMember =contactMember+"<ul>";
           contactMember=contactMember+"<li>"+this.street+", "+this.city+", "+this.state+"</li>";
